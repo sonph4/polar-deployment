@@ -131,5 +131,9 @@ services:
     environment:
       - KEYCLOAK_ADMIN=user
       - KEYCLOAK_ADMIN_PASSWORD=password
+      - KC_HOSTNAME=localhost
+      - HOSTNAME_STRICT=false
+      - KC_HOSTNAME_STRICT=false
+      - KC_HTTP_ENABLED=true
     ports:
       - 8080:8080
